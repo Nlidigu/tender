@@ -37,10 +37,10 @@ The website uses Bootstrap 5 grid system and media queries to ensure proper disp
 ## Commit History
 First commit: 15 June 2026
 Final commit: 28 June 2026
-Total commits: 34+
+Total commits: 35
 
 ## Author
 [NORMAN LIDIGU]
 
 ## Date
-FROM 15TH TO June 2026
+FROM 15TH TO 28TH June 2026
