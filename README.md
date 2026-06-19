@@ -11,6 +11,7 @@ Tender is a multi-page business website that showcases company services, gallery
 5. Contact
 6. FAQ
 7. Testimonials
+8. Blog
 
 ## Technologies Used
 - HTML5
@@ -37,10 +38,14 @@ The website uses Bootstrap 5 grid system and media queries to ensure proper disp
 ## Commit History
 First commit: 15 June 2026
 Final commit: 28 June 2026
-Total commits: 35
+Total commits: 34 +
 
 ## Author
 [NORMAN LIDIGU]
 
 ## Date
 FROM 15TH TO 28TH June 2026
+
+#
+KEEP GOING
+Wantam@1
