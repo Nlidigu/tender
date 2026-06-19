@@ -57,3 +57,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('contactForm').reset();
     }
 });
+// Dark Mode Toggle (JavaScript Feature 2)
+let darkModeButton = document.getElementById('darkModeToggle');
+
+if (darkModeButton) {
+    darkModeButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        
+        // Save preference in browser
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+    
+    // Load saved preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+}
