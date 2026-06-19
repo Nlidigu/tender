@@ -12,6 +12,7 @@ Tender is a multi-page business website that showcases company services, gallery
 6. FAQ
 7. Testimonials
 8. Blog
+9. Privacy
 
 ## Technologies Used
 - HTML5
@@ -26,7 +27,7 @@ Tender is a multi-page business website that showcases company services, gallery
 
 ## How to Run the Project
 1. Clone the repository: `git clone https://github.com/Nlidigu/tender.git`
-2. Open `index.html` in any web browser
+2. Open `Home.html` in any web browser
 3. Or use Live Server in VS Code
 
 ## Responsive Design
