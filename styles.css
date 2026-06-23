@@ -96,31 +96,73 @@ footer {
         font-size: 1.8rem;
     }
 }
-/* Smooth Fade In */
-.fade-in {
-    animation: fadeIn 1s ease-in;
+/* Navigation Link Hover Effect */
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
 }
 
-/* Hover Scale Effect */
-.hover-scale {
-    transition: transform 0.3s ease;
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
 }
 
-.hover-scale:hover {
-    transform: scale(1.05);
+.navbar-nav .nav-link:hover {
+    color: #3498db !important;
+}
+/* Button Hover Effects */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Slide In From Left */
-.slide-left {
-    animation: slideLeft 0.8s ease-out;
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.4);
 }
 
-@keyframes slideLeft {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
+.btn-primary:active {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* Different button colors if needed */
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(46, 204, 113, 0.4);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
 }
