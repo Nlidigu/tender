@@ -57,23 +57,30 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('contactForm').reset();
     }
 });
-// Dark Mode Toggle (JavaScript Feature 2)
-let darkModeButton = document.getElementById('darkModeToggle');
-
-if (darkModeButton) {
-    darkModeButton.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        
-        // Save preference in browser
-        if (document.body.classList.contains('dark-mode')) {
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            localStorage.setItem('darkMode', 'disabled');
-        }
-    });
+// Dark Mode Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    let darkModeButton = document.getElementById('darkModeToggle');
     
-    // Load saved preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
+    if (darkModeButton) {
+        darkModeButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            
+            // Save preference in browser
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeButton.textContent = 'Light';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeButton.textContent = 'Dark';
+            }
+        });
+        
+        // Load saved preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeButton.textContent = 'Light';
+        } else {
+            darkModeButton.textContent = 'Dark';
+        }
     }
-}
+});
