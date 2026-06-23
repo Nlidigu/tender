@@ -166,3 +166,49 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
 }
+/* ===== Background Images for Each Page ===== */
+
+/* Home Page */
+body.home-page {
+    background-image: url('images/home-bg.jpg');
+}
+
+/* About Page */
+body.about-page {
+    background-image: url('images/about-bg.jpg');
+}
+
+/* Services Page */
+body.services-page {
+    background-image: url('images/services-bg.WEBP');
+}
+
+/* Gallery Page */
+body.gallery-page {
+    background-image: url('images/gallery-bg.WEBP');
+}
+
+/* Contact Page */
+body.contact-page {
+    background-image: url('images/contact-bg.jpg');
+}
+
+/* FAQ Page */
+body.faq-page {
+    background-image: url('images/faq-bg.jpg');
+}
+
+/* Testimonials Page */
+body.testimonials-page {
+    background-image: url('images/testimonials-bg.jpg');
+}
+
+/* Blog Page */
+body.blog-page {
+    background-image: url('images/blog-bg.png');
+}
+
+/* Privacy Page */
+body.privacy-page {
+    background-image: url('images/privacy-bg.jpg');
+}
