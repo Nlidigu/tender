@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender - Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="services-page"></body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tender</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1>Our Services</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>Web Development</h4>
+                <p>We build responsive websites that work on all devices.</p>
+                <h4>Digital Marketing</h4>
+                <p>We help you reach more customers online.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Business Consulting</h4>
+                <p>Expert advice to grow your business.</p>
+                <h4>Customer Support</h4>
+                <p>24/7 support for your business needs.</p>
+            </div>
+        </div>
+        <h5> Contact us today to learn more about how we can help your business succeed!</h5>
+        <p>We offer personalized solutions tailored to your business goals. Our team of experts is ready to assist you in achieving success.</p>
+        <h5>Our Services Include:</h5>
+        <ul>
+            <li>Website Design and Development</li>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Social Media Marketing</li>
+            <li>Business Strategy Consulting</li>
+            <li>Customer Relationship Management (CRM) Solutions</li>
+        </ul>
+        <p>We pride ourselves on delivering high-quality services that drive results. Whether you're looking to enhance your online presence or streamline your business operations, we have the expertise to help you achieve your objectives.</p>
+        <p>Our team is dedicated to providing exceptional customer service and support throughout the entire process    . We work closely with our clients to understand their unique needs and develop customized solutions that align with their business goals.</p>
+        <p>Contact us today to schedule a consultation and discover how our services can benefit your business. We look forward to partnering with you on your journey to success!</p>
+    </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2020 Tender. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Back to Top Button -->
+<button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
+
+<style>
+/* Back to Top Button Styles */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+#topBtn:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+}
+
+/* Dark Mode Back to Top Button */
+.dark-mode #topBtn {
+    background-color: #0f3460;
+    box-shadow: 0 4px 15px rgba(15, 52, 96, 0.4);
+}
+
+.dark-mode #topBtn:hover {
+    background-color: #1a4a7a;
+}
+</style>
+
+<script>
+// When the user scrolls down 20px, show the button
+window.onscroll = function() {
+    let btn = document.getElementById('topBtn');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+</body>
+</html>
