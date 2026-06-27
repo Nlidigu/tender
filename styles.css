@@ -192,11 +192,6 @@ footer {
 body.home-page {
     background-image: url('images/home-bg.webp');
 }
-
-body.about-page {
-    background-image: url('images/about-bg.webp');
-}
-
 body.services-page {
     background-image: url('images/services-bg.webp');
 }
@@ -212,11 +207,6 @@ body.contact-page {
 body.faq-page {
     background-image: url('images/faq-bg.jpg');
 }
-
-body.testimonials-page {
-    background-image: url('images/testimonial-bg.jpg');
-}
-
 body.blog-page {
     background-image: url('images/blog-bg.png');
 }
